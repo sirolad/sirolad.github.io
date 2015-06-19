@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Quiz Master || By Sirowil Apps</title>
+    <link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="qavicon.ico"> 
+    
+</head>
+
+<body>
+    <header>
+        <center>
+            <div id="logo">
+                <a href="index.html">
+                    <img class="logo" width="173" src="logo2.png"></img>
+                </a>
+            </div>
+        </center>
+    </header>
+    <div id="login-form">
+        <div id="msg"></div>
+        <input type="radio" checked id="login" name="switch" class="hide">
+        <input type="radio" id="signup" name="switch" class="hide">
+        <div>
+            <ul class="form-header">
+                <li>
+                    <label for="login"><i class="fa fa-lock"></i> LOGIN
+                        </label>
+                </li>
+                <li>
+                    <label for="signup"><i class="fa fa-credit-card"></i> REGISTER</label>
+                </li>
+            </ul>
+        </div>
+        <div class="section-out">
+            <section class="login-section">
+                <div class="login">
+                    <div action="" id="login_user">
+                        <ul class="ul-list">
+                            <li>
+                                <input type="email" required class="input" placeholder="Your Email" id="email_login" /><span class="icon"><i class="fa fa-envelope"></i></span></li>
+                            <li>
+                                <input type="password" required class="input" placeholder="Password" id="password_login" /><span class="icon"><i class="fa fa-lock"></i></span></li>
+                            <li><span class="remember"></span><span class="remember"><a href="forget.html">Forget Password?</a></span></li>
+                            <li>
+                                <input type="submit" id="submit_login" value="SIGN IN" class="btn">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="signup-section">
+                <div class="login">
+                    <div action="" id="register_user">
+                        <ul class="ul-list">
+                            <li>
+                                <input type="email" required class="input" id="register_email" placeholder="Your Email" /><span class="icon"><i class="fa fa-envelope"></i></span></li>
+                            <li>
+                                <input type="password" required class="input" id="register_password" placeholder="Password" /><span class="icon"><i class="fa fa-lock"></i></span></li>
+                            <li>
+                                <input type="submit" id="submit_user" value="SIGN UP" class="btn">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        <center>
+            <div class="copyright">
+                2015 &copy; <a href="http://www.andela.co/">Sirowil Apps</a>
+            </div>
+        </center>
+    </div>
+    <script src="http://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="code.js"></script>
+
+</body>
+
+</html>

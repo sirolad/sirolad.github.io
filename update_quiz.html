@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Project</title>
+	<script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+	<script language="javascript" src="update_quiz.js"></script>
+	<script language="javascript" src="getURLParam.js"></script>
+</head>
+<body onload="showQuizes()">
+	<p>
+		<a href="adminDashboard.html">Dashboard</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="create_quiz.html">Create Quiz</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="update_quiz.html">Edit Quiz</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="setQandA.html">Set Questions</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="setQandA.html">Edit Questions</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	</p>
+	<table border="0">
+		<tr>
+			<td colspan="2"><h2>Update Quiz</h2></td>
+		<tr>
+		<tr height="30">
+			<td colspan="2"><b>Existing Quizes</b></td>
+		</tr>
+		<tr>
+			<td colspan="2"><div id="quizList"></div></td>
+		</tr>
+	</table>
+	<br /><hr /><br />
+	<form name="quizUpdateForm">
+		<input type="hidden" name="id" value="" />
+		<table border="0">
+			<tr>
+				<td>Old Category</td>
+				<td><input type="text" name="oldCategory" value="" /></td>
+			</tr>
+			<tr>
+				<td>New Category</td>
+				<td>
+					<select name="newCategory">
+						<option></option>
+						<option>Programming</option>
+						<option>Mathematics</option>
+						<option>Technical</option>
+						<option>Personality</option>
+						<option>Logical</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="name" value="" size="60" /></td>
+			</tr>
+			<tr height="50">
+				<td colspan="2"><input type="button" value="Save Changes" onclick="updateQuiz()" /></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

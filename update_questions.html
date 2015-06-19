@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Project</title>
+	<script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+	<script language="javascript" src="update_quiz.js"></script>
+</head>
+<body onload="showQuizes()">
+	<p>
+		<a href="adminDashboard.html">Dashboard</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="create_quiz.html">Create Quiz</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="update_quiz.html">Edit Quiz</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="setQandA.html">Set Questions</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="setQandA.html">Edit Questions</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	</p>
+	<table border="0">
+		<tr>
+			<td colspan="2"><h2>Update Questions and Answers</h2></td>
+		<tr>
+		<tr height="30">
+			<td colspan="2"><b>Existing Questions</b></td>
+		</tr>
+		<tr>
+			<td colspan="2"><div id="quizList"></div></td>
+		</tr>
+	</table>
+
+</body>
+</html>

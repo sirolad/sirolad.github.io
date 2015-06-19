@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Quiz Master -- Questions|| By Sirowil Apps</title>
+	<script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+	
+	<script language="javascript" src="getURLParam.js"></script>
+	<script language="javascript" src="quiz.js"></script>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="qavicon.ico"> 
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        
+    }
+    </style>
+</head>
+<body onload="startQuiz()">
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Quiz Master</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="change.html">Change Password</a><span class="icon"><i class="fa fa-envelope"></i></span>
+                    </li>
+                    <li>
+                        <input type="button" id="logout_user" class="btn btn-primary" value="Logout"><span class="icon"><i class="fa fa-envelope"></i></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="container">
+        <div class="text-center">
+             <img class="logo" width="173" src="logo2.png"></img>
+        </div>
+
+<div class="jumbotron">
+<div class="container text-center">
+	<form name="theForm" method="post">
+		<input type="hidden" id="correctOption" name="correctOption" value="" />
+		<input type="hidden" id="totalQuestions" name="totalQuestions" value="" />
+		<table border="0" cellspacing="7">
+			<tr>
+				<td colspan="2"><h2>Questions</h2></td>
+			<tr>
+			<tr>
+				<td colspan="2">
+					<div id="question" style="min-width:600px;min-height:100px; border:1px solid gray; border-radius:5px; padding:5px;"></div>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td><input type="radio" name="userAnswer" value="option 1"></td>
+				<td>
+					<div id="option1" style="min-width:600px;min-height:70px; border:1px solid gray; border-radius:5px; padding:5px;"></div>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td><input type="radio" name="userAnswer" value="option 2"></td>
+				<td>
+					<div id="option2" style="min-width:600px;min-height:70px; border:1px solid gray; border-radius:5px; padding:5px;"></div>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td><input type="radio" name="userAnswer" value="option 3"></td>
+				<td>
+					<div id="option3" style="min-width:600px;min-height:70px; border:1px solid gray; border-radius:5px; padding:5px;"></div>
+				</td>
+			</tr>
+			<tr height="50">
+				<td colspan="2">
+					<br />
+					<a id="link1" href="" onclick="storeAnswer()"class="btn btn-success">Next Question <span class="glyphicon glyphicon-chevron-right"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<!--<a id="link2" href="" onclick="">Previous Question</a>-->
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+    <script src="code.js"></script>
+</body>
+</html>

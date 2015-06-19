@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Project</title>
+	<script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+	<script language="javascript" src="setQandA.js"></script>
+</head>
+<body>
+	<p>
+		<a href="adminDashboard.html">Dashboard</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="create_quiz.html">Create Quiz</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="update_quiz.html">Edit Quiz</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="setQandA.html">Set Questions</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="update_questions.html">Edit Questions</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	</p>
+	<form name="theForm" method="post">
+		<table border="0">
+			<tr>
+				<td colspan="2"><h2>Set Questions & Answers</h2></td>
+			<tr>
+			<tr>
+				<td colspan="2">
+					Quiz<br />
+					<input type="text" name="quiz" value="" size="50" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Question<br />
+					<textarea name="question" cols="60" rows="5"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Option 1<br />
+					<textarea name="option1" cols="60" rows="3"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Option 2<br />
+					<textarea name="option2" cols="60" rows="3"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Option 3<br />
+					<textarea name="option3" cols="60" rows="3"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Right Answer<br />
+					<input type="radio" id="rightAnswer" name="rightAnswer" value="option 1" />Option 1
+					<input type="radio" id="rightAnswer" name="rightAnswer" value="option 2" />Option 2
+					<input type="radio" id="rightAnswer" name="rightAnswer" value="option 3" />Option 3
+				</td>
+			</tr>
+			<tr height="50">
+				<td colspan="2">
+					<input type="button" value="Save Question and Answers" onclick="start()" />&nbsp;&nbsp;&nbsp;
+					<input type="button" value="New Question" onclick="resetFields()" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
